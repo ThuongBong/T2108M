@@ -24,15 +24,28 @@ public class Fraction {
 
   //Ham nhap phan so
     public void nhap(){
+        int ts, ms;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhap vao tu so: ");
-        tuso = sc.nextInt();
-        System.out.println("Nhap vao mau so: ");
-        mauso = sc.nextInt();
+        do {
+            System.out.println("Nhap vao tu so: ");
+            ts = sc.nextInt();
+            System.out.println("Nhap vao mau so: ");
+            ms = sc.nextInt();
+            if(ms==0){
+                System.out.println("Vui long nhap lai mau so");
+            }
+        }while (ms==0);
+        tuso = ts;
+        mauso = ms;
+
     }
     //Ham hien thi phan so
     public void hienThi(){
-        System.out.println(tuso + "/" + mauso);
+         if (mauso == 1){
+            System.out.println(tuso);
+        }else {
+            System.out.println(tuso + "/" + mauso);
+        }
     }
     //Ham rut gon phan so
     public void rutGon(){
@@ -48,24 +61,40 @@ public class Fraction {
         //rut gon
         tuso /= b;
         mauso /= b;
-        System.out.println(tuso + "/" + mauso);
+        if (mauso == 1){
+            System.out.println(tuso);
+        }else {
+            System.out.println(tuso + "/" + mauso);
+        }
     }
     //Ham nghich dao
     public  void nghichDao(){
-        System.out.println(mauso + "/" + tuso);
+        if (mauso == 1){
+            System.out.println(tuso);
+        }else {
+            System.out.println(tuso + "/" + mauso);
+        }
     }
     //Ham cong 2 phan so
-    public Fraction cong(Fraction ps1, Fraction ps2){
+    public Fraction cong(Fraction ps1, Fraction ps2) {
         Fraction ps3 = new Fraction();
-        ps3.tuso = ps1.tuso * ps2.mauso + ps1.mauso * ps2.tuso;
-        ps3.mauso = ps1.mauso * ps2.mauso;
+        if (mauso != mauso){
+            ps3.tuso = ps1.tuso + ps2.tuso;
+        }else {
+            ps3.tuso = ps1.tuso * ps2.mauso + ps1.mauso * ps2.tuso;
+            ps3.mauso = ps1.mauso * ps2.mauso;
+        }
         return ps3;
     }
     //Ham tru 2 phan so
     public Fraction tru(Fraction ps1, Fraction ps2){
         Fraction ps3 = new Fraction();
-        ps3.tuso = ps1.tuso * ps2.mauso - ps1.mauso * ps2.tuso;
-        ps3.mauso = ps1.mauso * ps2.mauso;
+        if (mauso != mauso){
+            ps3.tuso = ps1.tuso - ps2.tuso;
+        }else {
+            ps3.tuso = ps1.tuso * ps2.mauso - ps1.mauso * ps2.tuso;
+            ps3.mauso = ps1.mauso * ps2.mauso;
+        }
         return ps3;
     }
     //Ham nhan 2 phan so
