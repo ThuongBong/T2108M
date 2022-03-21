@@ -52,10 +52,7 @@ public class Fraction {
     }
     //Ham nghich dao
     public  void nghichDao(){
-        int ngd = tuso;
-        tuso = mauso;
-        mauso = ngd;
-        System.out.println(tuso + "/" + mauso);
+        System.out.println(mauso + "/" + tuso);
     }
     //Ham cong 2 phan so
     public Fraction cong(Fraction ps1, Fraction ps2){
