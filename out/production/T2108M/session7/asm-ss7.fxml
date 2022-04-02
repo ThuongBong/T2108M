@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="session7.Controller">
+   <children>
+      <TextField fx:id="name" layoutX="58.0" layoutY="94.0" prefHeight="47.0" prefWidth="276.0" promptText="Tên:" />
+      <TextField fx:id="price" layoutX="58.0" layoutY="193.0" prefHeight="47.0" prefWidth="276.0" promptText="Gía:" />
+      <TextField fx:id="unit" layoutX="219.0" layoutY="285.0" prefHeight="47.0" prefWidth="115.0" promptText="Đơn vị:" />
+      <TextField fx:id="amount" layoutX="58.0" layoutY="285.0" prefHeight="47.0" prefWidth="115.0" promptText="Số lượng:" />
+      <Button layoutX="139.0" layoutY="372.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="115.0" onAction="#submit" text="Submit" textFill="#e85d5d">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="result" layoutX="494.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách sản phẩm: " wrappingWidth="276.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="errMg" fill="#dd0808" layoutX="49.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter the correct format" visible="false" wrappingWidth="276.0">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
