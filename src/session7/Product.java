@@ -4,7 +4,7 @@ public class Product {
     public String name;
     public Double price;
     public String unit;
-    public int amount;
+    public Integer amount;
 
     public Product() {
     }
@@ -40,11 +40,11 @@ public class Product {
         this.unit = unit;
     }
 
-    public int getAmount() {
+    public Integer getAmount() {
         return amount;
     }
 
-    public void setAmount(int amount) {
+    public void setAmount(Integer amount) {
         this.amount = amount;
     }
 
