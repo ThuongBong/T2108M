@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="cinema.HomeController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button defaultButton="true" layoutX="398.0" layoutY="110.0" mnemonicParsing="false" prefHeight="230.0" prefWidth="305.0" text="DANH SÁCH LỊCH CHIẾU">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Text fill="RED" layoutX="310.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUẢN LÝ RẠP CHIẾU PHIM CGV" underline="true">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Button defaultButton="true" layoutX="750.0" layoutY="110.0" mnemonicParsing="false" prefHeight="230.0" prefWidth="305.0" text="DANH SÁCH PHÒNG CHIẾU">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button defaultButton="true" layoutX="45.0" layoutY="110.0" mnemonicParsing="false" prefHeight="230.0" prefWidth="305.0" text="DANH SÁCH LỊCH CHIẾU">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button defaultButton="true" layoutX="198.0" layoutY="385.0" mnemonicParsing="false" prefHeight="230.0" prefWidth="305.0" text="DANH SÁCH THỂ LOẠI">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button onAction="#DsVe" defaultButton="true" layoutX="598.0" layoutY="385.0" mnemonicParsing="false" prefHeight="230.0" prefWidth="305.0" text="DANH SÁCH VÉ ĐÃ ĐẶT">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

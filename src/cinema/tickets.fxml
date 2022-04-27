@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="cinema.TicketsController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="657.0" prefWidth="980.0">
+         <children>
+            <TableView fx:id="sTickets" layoutX="10.0" layoutY="70.0" prefHeight="580.0" prefWidth="980.0">
+              <columns>
+                <TableColumn fx:id="sMaVe" prefWidth="225.0" text="Mã vé" />
+                <TableColumn fx:id="sMaLichChieu" minWidth="0.0" prefWidth="233.0" text="Mã lịch chiếu" />
+                  <TableColumn fx:id="sMaGhe" minWidth="0.0" prefWidth="178.0" text="Mã ghế" />
+                  <TableColumn fx:id="sEdit" minWidth="0.0" prefWidth="165.0" text="Edit" />
+                  <TableColumn fx:id="sDelete"  minWidth="0.0" prefWidth="178.0" text="Delete" />
+              </columns>
+            </TableView>
+            <Text layoutX="441.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý vé" wrappingWidth="157.6708984375">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Text>
+            <Button onAction="#AddTickets" layoutX="836.0" layoutY="15.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="131.0" text="More tickets">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button onAction="#Back" layoutX="28.0" layoutY="15.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="100.0" text="&lt;&lt; Back">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>
